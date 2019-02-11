@@ -1,0 +1,81 @@
+.calendar-awesome {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 25px;
+  text-align: center; 
+}
+
+.calendar-awesome .hdr {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.calendar-awesome .calendar-table-container {
+  display: inline-block;
+  position: relative;
+}
+
+.calendar-awesome .calendar-table {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  border-spacing: 0;
+  padding: 10px;
+  position: relative;
+}
+
+.calendar-awesome thead th {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.calendar-awesome thead .th-content {
+  overflow: hidden;
+  width: 5px;
+}
+
+.calendar-awesome td {
+  padding: 10px;
+}
+
+.calendar-awesome .weekend {
+  color: #ff0000;
+}
+
+.calendar-awesome .controls .previous,
+.calendar-awesome .controls .next {
+  background: #ccc;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  text-decoration: none;
+  top: calc(50% - 25px);
+  width: 50px;
+}
+
+.calendar-awesome .controls .previous {
+  left: -75px;
+}
+
+.calendar-awesome .controls .next {
+  right: -75px;
+}
+
+.calendar-awesome .controls .previous:after {
+  content: '\000AB';
+  font-size: 36px;
+}
+
+.calendar-awesome .controls .next:after {
+  content: '\000BB';
+  font-size: 36px;
+}
+
+.calendar-awesome .controls .control-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  font-size: 8px;
+  position: absolute;
+}
