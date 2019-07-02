@@ -85,14 +85,14 @@ describe("Bearthday Tests", function() {
     });
 
     it('when image and caption is passed in', function () {
-      const ranRenderSlide = renderSlide('image.png', 'test caption');
-      expect(ranRenderSlide).to.contain('src="image.png"');
+      const ranRenderSlide = renderSlide('image.jpg', 'test caption');
+      expect(ranRenderSlide).to.contain('src="image.jpg"');
       expect(ranRenderSlide).to.contain('<div class="caption">test caption</div>');
     });
 
     it('when caption is not passed in', function () {
-      const ranRenderSlide = renderSlide('image.png');
-      expect(ranRenderSlide).to.contain('src="image.png"');
+      const ranRenderSlide = renderSlide('image.jpg');
+      expect(ranRenderSlide).to.contain('src="image.jpg"');
       expect(ranRenderSlide).to.not.contain('<div class="caption" data->test caption</div>');
     });
 
@@ -104,7 +104,7 @@ describe("Bearthday Tests", function() {
 
   describe('buildImageUrl', function() {
     it('builds correct source based on passed in date and imageName ', function () {
-      expect(buildImageUrl('2019-01-02 00:22:24', 'epic_1b_20190102002713')).to.equal("https://epic.gsfc.nasa.gov/archive/natural/2019/01/02/png/epic_1b_20190102002713.png");
+      expect(buildImageUrl('2019-01-02 00:22:24', 'epic_1b_20190102002713')).to.equal("https://epic.gsfc.nasa.gov/archive/natural/2019/01/02/jpg/epic_1b_20190102002713.jpg");
     });
   });
 
