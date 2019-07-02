@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>Bearthday Image</title>
+  <link rel="stylesheet" href="css/bearthday.css"/>
+  <script src="js/bearthday-run.js" type="module"></script> 
+</head>
+<body>
+  <div class="bearthday-page">
+    <h1 class="header">Bearthday Image</h1>
+    <h2 class="sub-header">Please enter your birthday to view an image of Earth that was taken by NASA on your last birthday.</h2>
+    <form class="bearthday-form">
+      <div class="birth-month-wrapper form-select-wrapper">
+        <label class="form-label" for="birth-month-select">Select your Birth month</label>
+        <select class="birth-month-select" id="birth-month-select"></select>
+      </div>
+      <div class="birth-day-wrapper form-select-wrapper"></div>
+      <button class="birthdate-submit" id="birthdate-submit" disabled>Submit</button>
+    </form>
+    <div class="bearthday-image-container"></div>
+    <div class="error-text"></div>
+  </div>
+</body>
+</html>

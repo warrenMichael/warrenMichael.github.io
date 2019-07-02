@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+}
+
+.bearthday-page {
+  background: url(../images/bear.jpg) top right no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0;
+}
+
+.bearthday-page .header {
+  color: #228B22;
+  font-size:36px;
+  font-weight: 600;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.bearthday-page .sub-header {
+  color: #000080;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 20px 0;
+  text-align: center;
+}
+
+.bearthday-page .bearthday-form {
+  margin: 0 20px;
+}
+
+.bearthday-page .form-select-wrapper {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.bearthday-page .form-select-wrapper:empty {
+  margin: 0;
+}
+
+.bearthday-page .form-label {
+  color: #a88f59;
+  margin-right: 10px;
+}
+
+.bearthday-page .birthdate-submit {
+  background: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  min-width: 75px;
+  min-height: 30px;
+}
+
+.bearthday-page .birthdate-submit:disabled {
+  cursor: not-allowed;
+  opacity: .75;
+}
+
+.bearthday-page .error-text {
+  color: #f00;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bearthday-page .bearthday-image-container {
+  border-top: 1px solid #ccc;
+  margin: 20px 0; 
+  padding-top: 20px;
+}
+
+.bearthday-page .birthday-text {
+  animation: rainbow 5s infinite;
+  margin: 0;
+  text-align: center;
+}
+
+.bearthday-page .bearthday-image-container:empty {
+  padding: 0;
+}
+
+.bearthday-page .bearthday-image {
+  background: #000;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.bearthday-page .caption {
+  font-size: 11px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.bearthday-page .slider-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.bearthday-page .slide {
+  float: left;
+  position: relative;
+  width: 300px;
+}
+
+@media (min-width: 778px) {
+  .bearthday-page .slider-wrapper,
+  .bearthday-page .slide {
+    width: 700px;
+  }
+}
+
+.bearthday-page .slider-wrapper:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.bearthday-page .slider {
+  left: 0;
+  margin-top: 20px;
+  position: relative;
+  transition: left 1s;
+}
+
+.bearthday-page .controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bearthday-page .controls .disabled {
+  cursor: not-allowed;
+  opacity: .3;
+}
+
+.bearthday-page .controls .control {
+  background: #aaa;
+  border-radius: 25px;
+  color: #000;
+  height: 50px;
+  margin: 0 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
+}
+
+.bearthday-page .controls .control-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.bearthday-page .controls .previous:after {
+  content: '\02190';
+}
+
+.bearthday-page .controls .next:after {
+  content: '\02192';
+}
+
+.bearthday-page .controls .control:after {
+  display: block;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+@keyframes rainbow {
+  20% {color: #ff0000}
+  40% {color: #FFA500}
+  60% {color: #008000}
+  80% {color: #0000FF}
+  100% {color: #800080}
+}
