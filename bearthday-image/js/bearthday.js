@@ -182,7 +182,7 @@ export function renderSlide(imageSrc, caption) {
 export function buildImageUrl(date, imageName) {
   const splitDate = date.split(' '); // Don't need time smaller than day
   const datePath = splitDate[0].replace(/-/g, '/');
-  const imageSrc = `https://epic.gsfc.nasa.gov/archive/natural/${datePath}/png/${imageName}.png`;
+  const imageSrc = `https://epic.gsfc.nasa.gov/archive/natural/${datePath}/jpg/${imageName}.jpg`;
   return imageSrc;
 };
 
