@@ -1,0 +1,50 @@
+{
+  "name": "todo-list",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "sinon": "^7.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/register": "^7.5.5",
+    "babel-preset-react-app-babel-7": "^4.0.2-0",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "cheerio": "^1.0.0-rc.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint-plugin-react": "^7.14.3",
+    "ignore-styles": "^5.0.1",
+    "mocha": "^6.2.0",
+    "prettier": "1.18.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "./node_modules/.bin/eslint 'src/**/*.js' 'test/**/*.js'",
+    "prettier": "prettier --write 'src/**/*.js' 'test/**/*.js'",
+    "test": "NODE_ENV=test mocha --require @babel/register --require ignore-styles mocha.config.js test/**.spec.js  test/**/**.spec.js",
+    "tdd": "NODE_ENV=test mocha --require @babel/register --require ignore-styles mocha.config.js test/**.spec.js  test/**/**.spec.js  --watch",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

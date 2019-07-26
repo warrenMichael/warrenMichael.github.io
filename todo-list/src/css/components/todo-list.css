@@ -1,0 +1,23 @@
+.todo-list {
+  margin: 0 20px 20px;
+}
+
+.todo-list .no-tasks-text {
+  color: #b6935c;
+  line-height: 25px;
+  margin-bottom: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.todo-list.completed .todo-list-item {
+  display: none;
+}
+
+.todo-list.completed .todo-list-item.completed {
+  display: block;
+}
+
+.todo-list.uncompleted .todo-list-item.completed {
+  display: none;
+}

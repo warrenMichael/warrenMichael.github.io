@@ -1,0 +1,33 @@
+.view-options {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.view-options .view-option-item {
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  list-style: none;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.view-options .view-option-item:hover,
+.view-options .view-option-item:focus {
+  background: #000;
+  color: #fff;
+}
+
+.view-options.uncompleted .view-option-item.uncompleted,
+.view-options.completed .view-option-item.completed,
+.view-options .view-option-item.all {
+  background: #000;
+  color: #fff;
+}
+
+.view-options.uncompleted .view-option-item.all,
+.view-options.completed .view-option-item.all {
+  background: #fff;
+  color: #000;
+}

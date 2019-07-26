@@ -1,0 +1,25 @@
+.add-item-container {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.add-item-container .add-item-label {
+  display: block;
+}
+
+.add-item-container .add-item-text-input {
+  max-width: 400px;
+  width: 100%;
+}
+
+.add-item-container .add-item-submit {
+  cursor: pointer;
+}
+
+.add-item-container .add-item-submit:hover,
+.add-item-container .add-item-submit:focus {
+  background: #000;
+  color: #fff;
+}
