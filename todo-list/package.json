@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "sinon": "^7.3.2"
   },
   "devDependencies": {
@@ -20,7 +20,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint-plugin-react": "^7.14.3",
     "ignore-styles": "^5.0.1",
-    "mocha": "^6.2.0",
+    "mocha": "^10.1.0",
     "prettier": "1.18.2"
   },
   "scripts": {
