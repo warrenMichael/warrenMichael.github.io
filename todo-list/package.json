@@ -20,7 +20,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint-plugin-react": "^7.14.3",
     "ignore-styles": "^5.0.1",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "prettier": "1.18.2"
   },
   "scripts": {
